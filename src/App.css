@@ -1,0 +1,23 @@
+.app {
+  width: 600px;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+@media (max-width: 770px) {
+  .app {
+    width: 90%;
+    height: 70vh;
+  }
+}
