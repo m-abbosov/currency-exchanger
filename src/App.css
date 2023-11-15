@@ -2,7 +2,7 @@
   position: relative;
   width: 600px;
   height: 80vh;
-  background-color: #bfbfbf;
+  background-color: whitesmoke;
   box-shadow: 1px 2px 2px 1px rgba(255, 255, 255, 0.4);
 }
 
@@ -20,5 +20,12 @@ input[type="number"] {
   .app {
     width: 90%;
     height: 70vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .app {
+    width: 90%;
+    height: 90vh;
   }
 }
