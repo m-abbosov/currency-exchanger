@@ -21,8 +21,11 @@ const CurrencyProvider = ({ children }) => {
   ];
 
   const handleConvert = (key) => {
-    if (amount) {
-      if (key.key === "Enter" || key.key === undefined) {
+    if (key.key === "Enter" || key.key === undefined) {
+      if (amount == 0) {
+        setResultCurrency(0);
+      }
+      if (Number(amount)) {
         axios
           .get(
             `https://api.fastforex.io/convert?from=${
@@ -34,6 +37,8 @@ const CurrencyProvider = ({ children }) => {
           .then((res) => {
             setResultCurrency(res.data.result[toCurrency.split(" ")[1]]);
           });
+      } else {
+        setResultCurrency(0);
       }
     }
   };
