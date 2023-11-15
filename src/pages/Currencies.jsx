@@ -40,7 +40,7 @@ const Currencies = () => {
 export default Currencies;
 
 const Wrapper = styled.div`
-  padding: 3rem;
+  padding: 2rem;
 
   select {
     text-align: left;
