@@ -9,6 +9,7 @@ const useAxios = (url) => {
     const fetchData = async () => {
       try {
         setLoaded(true);
+        setData([])
         const res = await axios(url);
         setData(res.data);
       } catch (error) {

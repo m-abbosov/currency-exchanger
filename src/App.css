@@ -1,8 +1,9 @@
 .app {
+  position: relative;
   width: 600px;
   height: 80vh;
-  background-color: white;
-  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  background-color: #bfbfbf;
+  box-shadow: 1px 2px 2px 1px rgba(255, 255, 255, 0.4);
 }
 
 input::-webkit-outer-spin-button,

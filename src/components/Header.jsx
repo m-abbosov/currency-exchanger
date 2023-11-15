@@ -16,6 +16,7 @@ const Wrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 
   a {
     text-decoration: none;
@@ -27,8 +28,8 @@ const Wrapper = styled.nav`
     font-weight: 600;
 
     &.active {
-      background-color: #0297fe;
       color: white;
+      background-color: #0297fe;
     }
   }
 `;
